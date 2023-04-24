@@ -43,4 +43,5 @@ const flipCard = () => {
 .container :hover {
   box-shadow: 0 12px 22px 0 rgba(0,0,0,.1);
 }
+
 </style>

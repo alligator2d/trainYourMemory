@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import store from './store'
-// import "./main.css";
 
 
 import { BootstrapVue3 } from 'bootstrap-vue-3'

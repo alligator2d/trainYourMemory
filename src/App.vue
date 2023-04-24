@@ -1,16 +1,15 @@
 <template>
-	<div class="container w-75">
+	<div class="container w-50">
 		<header>
 			<div class=""><h2>Game: Train your Memory</h2></div>
-			<button class="btn btn-primary">Reset</button>
 		</header>
-		<GameBoardComponent></GameBoardComponent>
+		<GameBoard></GameBoard>
 	</div>
 </template>
 
 <script setup lang="ts">
 
-import GameBoardComponent from "@/components/GameBoardComponent.vue";
+import GameBoard from "@/components/GameBoard.vue";
 
 </script>
 
@@ -21,7 +20,5 @@ import GameBoardComponent from "@/components/GameBoardComponent.vue";
 .container {
   margin-top: 20px;
 }
-.btn {
-  float: right;
-}
+
 </style>
