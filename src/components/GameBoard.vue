@@ -33,21 +33,21 @@ let cardID = 0;
 
 const initializeGame = () => {
 	const images = [
-		require("../assets/images/img1.png"),
-		require("../assets/images/img2.png"),
-		require("../assets/images/img3.png"),
-		require("../assets/images/img4.png"),
-		require("../assets/images/img5.png"),
-		require("../assets/images/img6.png"),
-		require("../assets/images/img7.png"),
-		require("../assets/images/img8.png"),
-		require("../assets/images/img9.png"),
-		require("../assets/images/img10.png"),
-		require("../assets/images/img11.png"),
-		require("../assets/images/img12.png"),
-		require("../assets/images/img13.png"),
-		require("../assets/images/img14.png"),
-		require("../assets/images/img15.png"),
+		require("@/assets/images/img1.png"),
+		require("@/assets/images/img2.png"),
+		require("@/assets/images/img3.png"),
+		require("@/assets/images/img4.png"),
+		require("@/assets/images/img5.png"),
+		require("@/assets/images/img6.png"),
+		require("@/assets/images/img7.png"),
+		require("@/assets/images/img8.png"),
+		require("@/assets/images/img9.png"),
+		require("@/assets/images/img10.png"),
+		require("@/assets/images/img11.png"),
+		require("@/assets/images/img12.png"),
+		require("@/assets/images/img13.png"),
+		require("@/assets/images/img14.png"),
+		require("@/assets/images/img15.png"),
 	];
 	
 	const shuffledImages = shuffle(images.concat(images));
@@ -77,9 +77,7 @@ const loadCards = () => {
 };
 
 const flipCard = (card: Card) => {
-	if (card.isMatched || card.isFlipped || openedCards.length >= 2) {
-		return;
-	}
+	if (card.isMatched || card.isFlipped || openedCards.length >= 2) return;
 	
 	card.isFlipped = true;
 	openedCards.push(card);
